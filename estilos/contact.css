@@ -1,0 +1,84 @@
+.contact{
+    width: 100%;
+    padding: 7rem 8rem;
+    background-color: #121920;
+}
+
+.contact h1{
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 800;
+    color: #0b1014;
+    margin-bottom: 1.5rem;
+    color: #F7F9F9;
+    letter-spacing: -1px;
+}
+.contact h1 span{
+    font-size: 3.33rem;
+    font-family: 'Tourney', cursive;
+    color: #5499C7;
+    font-weight: 800;
+}
+.contact p{
+    padding: .5rem 10rem;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #D0D3D4;
+    font-weight: 400;
+    line-height: 1.6rem;
+    margin-bottom: 2.5rem;
+}
+
+.grid-container-contact {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    margin-bottom: 1.2rem;
+}
+
+.grid-item-contact {
+    background-color: rgb(27, 38, 49);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 45vh;
+    height: 7.5vh;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0 0 3px 1px rgba(18, 24, 31, 0.1);
+    color: #080a0e;
+    transition: all .3s ease-in;
+}
+
+.grid-item-contact i{
+    font-size: 1.3rem;
+    margin-right: 0.7rem;
+    color: #D0D3D4;
+    transition: all 0.3s ease;
+
+}
+
+.grid-item-contact a{
+    font-size: 1rem;
+    color: #D0D3D4;
+    text-decoration: none;
+    color: #5DADE2;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.grid-item-contact:hover {
+    transform: translateY(-10px);
+    background-color: rgb(20, 29, 37);
+}
+
+.grid-item-contact:hover i{
+    color: #5DADE2;
+}
+
+.grid-item-contact:hover a{
+    color: #D0D3D4;
+}

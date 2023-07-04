@@ -1,0 +1,136 @@
+.about-me{
+    width: 100%;
+    background-color: #17202A;
+    padding: 6rem 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sobremi{
+    font-size: 3.6rem;
+    color: #F0F3F4;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
+.sobremi .mi{
+    font-size: 3.8rem;
+    font-family: 'Tourney', cursive;    
+    color: #5499C7;
+    font-weight: 700;
+}
+
+.contenedor-sobremi{
+    width: 100%;
+    height: 55vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+}
+.personal-informacion{
+    width: 55%;
+    height: 100%;
+}
+
+.personal-informacion h2{
+    color: #ECF0F1;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+}
+
+.personal-informacion .lista{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    color: #D0D3D4;
+    margin-bottom: 3rem;
+}
+
+.personal-informacion .lista ul{
+    width: 50%;
+    list-style: none;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 1.5rem;
+}
+
+.personal-informacion .lista ul li{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #979A9A;
+}
+
+.personal-informacion .lista ul li .respuesta{
+    margin-left: 0.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #D0D3D4;
+}
+.personal-informacion .lista ul li .respuesta-email{
+    margin-left: 0.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #D0D3D4;
+}
+.btnCV{
+    padding: .5rem 2rem 0.5rem 2rem;
+    border-radius: 20px;
+    border: 3px solid #32a2ec;
+    color: #ECF0F1;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.3s linear;
+}
+
+.btnCV:hover{
+    background-color: #32a2ec;
+}
+
+.personal-hobbies{
+    width: 45%;
+    height: 100%;
+}
+
+.personal-hobbies h2{
+    color: #ECF0F1;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    justify-content: start;
+    gap: 0.6rem;
+}
+.grid-item{
+    background-color: rgba(37, 47, 60, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0 0 3px 1px rgba(18, 25, 32, 0.2);
+    color: #080a0e;
+    font-size: 2rem;
+    transition: all .3s ease-in;
+  }
+
+  .grid-item:hover{
+    transform: scale(1.15);
+    background-color: rgb(41, 53, 66); 
+    color: #21618C;
+    font-size: 2.5rem; 
+}
+
