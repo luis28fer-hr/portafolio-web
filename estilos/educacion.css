@@ -1,99 +1,92 @@
-.education{
+.services{
+    position: relative;
     width: 100%;
-    height: 85vh;
+    height: auto;
     background-color: #11171f;
-    padding: 4rem 12rem;
+    padding: 4rem 0.5rem 6rem 0.5rem;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: start;
 }
-.education-title{
-    font-size: 2.5rem;
+.services-title{
+    font-size: 2.7rem;
     color: #F0F3F4;
     margin-bottom: 1.5rem;
+    font-weight: 700;
+    padding: 0 5rem;
 }
-.education-title .title-azul{
-    font-size: 2.6rem;
+.services-title .title-azul{
+    font-size: 2.8rem;
     font-family: 'Tourney', cursive;    
     color: #5499C7;
     font-weight: 700;
 }
-.tarjetas{
+
+.services .container-cards{
+    width: 95%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+    align-items: start;
+    justify-content: center;
+    z-index: 10;
+    padding: 1.5rem 4.5rem;
+}
+
+.services .container-cards .card-item{
+    position: relative;
+    color: white;
+    width: 100%;
+    height: 15rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: start;
-    gap: 0.8rem;
-    width: 100%;
-    height: 100%;
-}
-.tarjeta{
-    width: 30%;
-    height: 100%;
-    background-color: rgba(37, 47, 60, 1);
-    border: 6px;
-    padding: 1.5rem;
-    transition: all 0.3s ease-in;
-}
-.tarjeta:hover{
+    padding: 1rem;
+    background-color: #192229;
+    border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 0 5px 2px rgba(41, 47, 53, 0.5);
-    transform:scale(1.03);
-
+    transition: all 0.5s ease-in-out;
+}
+.services .container-cards .card-item.activo{
+    background-image: linear-gradient(to top, #58a3d6, #5095c3, #4887b0, #41799d, #3a6c8b, #366480, #325b76, #2e536b, #2b4e65, #28495e, #264458, #233f52);
+    transform: translateY(2.5rem);
+}
+.services .container-cards .card-item.activoAbajo{
+    transform: translateY(2.5rem);
 }
 
-.tarjeta-icon{
-    width: 100%;
-    height: 65%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
 
-.tarjeta-icon .cecy{
+.container-cards .card-item img{
     width: 100%;
-    height: 83%;
+    height: 48%;
+    padding: 0.5rem 0;
     object-fit: scale-down;
-    filter: grayscale(85%)
-}
-.tarjeta-icon img{
-    width: 100%;
-    height: 95%;
-    object-fit: scale-down;
-    filter: grayscale(95%)
-}
-.tarjeta-descripcion{
-    width: 100%;
-    height: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
-.tarjeta-descripcion h2{
-    font-size: 0.9rem;
-    text-align: center;
-    font-weight: 800;
-    color: #D0D3D4;
-    letter-spacing: 1px;
-}
-.tarjeta-descripcion h3{
-    margin-top: 0.9rem;
-    font-size: 0.9rem;
-    text-align: center;
-    font-weight: 500;
-    color: #ECF0F1;
-}
+    object-position: center;
+    transition: all 0.4s ease-in;
 
-.tarjeta-carrera{
-    width: 100%;
-    height: 15%;
-    display: flex;
-    align-items: end;
-    justify-content: end;
 }
-.tarjeta-carrera h4{
+.container-cards .card-item:hover img{
+    transform: scale(1.1);
+}
+.container-cards .card-item h2{
+    width: 100%;
+    height: 17%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center
+}
+.container-cards .card-item p{
+    padding: 0.2rem 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 1.25rem;
     text-align: center;
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    color: #F0F3F4;
+    width: 100%;
+    height: 35%;
 }

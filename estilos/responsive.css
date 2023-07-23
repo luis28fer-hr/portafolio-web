@@ -119,6 +119,23 @@
 
 @media screen and (max-width: 1270px) {
 
+    /* Services */
+    .services-title {
+        font-size: 2.5rem;
+    }
+
+    .services-title .title-azul {
+        font-size: 2.6rem;
+
+    }
+
+    .container-cards .card-item h2 {
+        font-size: 1rem;
+    }
+
+    .container-cards .card-item p {
+        font-size: 0.8rem;
+    }
 
     /* tooll */
 
@@ -129,11 +146,7 @@
 
 
     .grid-container-tools {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
+        grid-template-columns: auto auto auto auto;
     }
 
     .grid-item-tool {
@@ -171,9 +184,31 @@
     .tarjeta-git {
         width: 45%;
     }
+
+    /* Contact */
+
+    .contact {
+        width: 100%;
+        padding: 7rem 5rem;
+    }
+
+
+    .contact p {
+        padding: .5rem 1rem;
+        text-align: center;
+        font-size: 1.05rem;
+    }
+
+    .grid-container-contact {
+        grid-template-columns: auto auto;
+    }
+
+    .grid-item-contact {
+        width: 50vh;
+        height: 8vh;
+
+    }
 }
-
-
 
 @media screen and (max-width: 1170px) {
 
@@ -205,11 +240,9 @@
     }
 
 
-
     /* About me */
 
     .about-me {
-
         padding: 6rem 4rem;
     }
 
@@ -222,7 +255,7 @@
     }
 
     .personal-informacion {
-        width: 100%;
+        width: 80%;
         height: auto;
         margin-bottom: 4rem;
     }
@@ -234,31 +267,18 @@
         text-align: center;
     }
 
-    .personal-informacion .lista {
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        color: #D0D3D4;
-        margin-bottom: 3rem;
-        gap: 1rem;
-    }
-
-
     .personal-hobbies {
         width: 100%;
         height: auto;
     }
 
     .personal-hobbies h2 {
-        color: #ECF0F1;
-        font-size: 1.5rem;
-        letter-spacing: -1px;
-        margin-bottom: 2rem;
+        text-align: center;
     }
 
     .grid-container {
         display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto;
+        grid-template-columns: repeat(5, auto);
         align-items: center;
         justify-content: center;
     }
@@ -287,73 +307,17 @@
         font-size: 2.5rem;
     }
 
-
-    /* EDUCACION */
-
-    .education {
-        width: 100%;
-        height: auto;
-        background-color: #11171f;
-        padding: 4rem 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+    /* Servives */
+    .services .container-cards{
+        grid-template-columns: repeat(3, 1fr);
     }
-
-    .tarjetas {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 0.8rem;
-        width: 100%;
-        height: auto;
-        margin-top: 1rem;
+    .services .container-cards .card-item.activo{
+        transform: translateY(0);
     }
-
-    .tarjeta {
-        width: 33%;
-        height: 65vh;
+    .services .container-cards .card-item.activoAbajo{
+        transform: translateY(0);
     }
-
-    .tarjeta-icon {
-        width: 100%;
-        height: 65%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    .tarjeta-icon .cecy {
-        height: 70%;
-    }
-
-    .tarjeta-icon img {
-        height: 75%;
-    }
-
-    .tarjeta-descripcion h2 {
-        font-size: 0.9rem;
-    }
-
-    .tarjeta-descripcion h3 {
-        font-size: 0.9rem;
-    }
-
-    .tarjeta-carrera {
-        width: 100%;
-        height: 15%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .tarjeta-carrera h4 {
-        text-align: center;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #F0F3F4;
-    }
+    
 
 
     /* tooll */
@@ -460,7 +424,6 @@
     }
 }
 
-
 @media screen and (max-width: 1025px) {
 
     /* Home  */
@@ -482,12 +445,6 @@
         margin-top: 2rem;
         min-width: 60%;
         height: 70vh;
-        transition: all 0s ease-in;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background: url(/img/foto-perfil.jpeg);
-        background-size: cover;
-        transition: all 1s ease-in;
     }
 
 
@@ -495,20 +452,11 @@
     /* About me */
 
     .about-me {
-
         padding: 6rem 4rem;
     }
 
-    .contenedor-sobremi {
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
     .personal-informacion {
-        width: 100%;
+        width: 80%;
         height: auto;
         margin-bottom: 4rem;
     }
@@ -520,34 +468,14 @@
         text-align: center;
     }
 
-    .personal-informacion .lista {
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        color: #D0D3D4;
-        margin-bottom: 3rem;
-        gap: 1rem;
-    }
 
-
-    .personal-hobbies {
-        width: 100%;
-        height: auto;
-    }
 
     .personal-hobbies h2 {
-        color: #ECF0F1;
+        text-align: center;
         font-size: 1.2rem;
-        letter-spacing: -1px;
-        margin-bottom: 2rem;
+
     }
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        align-items: center;
-        justify-content: center;
-    }
 
     .grid-item {
         background-color: rgba(37, 47, 60, 0.8);
@@ -573,74 +501,23 @@
         font-size: 2.5rem;
     }
 
-
-    /* EDUCACION */
-
-    .education {
-        width: 100%;
-        height: auto;
-        background-color: #11171f;
-        padding: 4rem 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+    /* Services */
+    .services-title {
+        font-size: 2.4rem;
     }
 
-    .tarjetas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0.8rem;
-        width: 100%;
-        height: auto;
-        margin-top: 1rem;
+    .services-title .title-azul {
+        font-size: 2.5rem;
+
     }
 
-    .tarjeta {
-        width: 65%;
-        height: 65vh;
+    .container-cards .card-item h2 {
+        font-size: 0.8rem;
     }
 
-    .tarjeta-icon {
-        width: 100%;
-        height: 65%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+    .container-cards .card-item p {
+        font-size: 0.8rem;
     }
-
-    .tarjeta-icon .cecy {
-        height: 70%;
-    }
-
-    .tarjeta-icon img {
-        height: 75%;
-    }
-
-    .tarjeta-descripcion h2 {
-        font-size: 0.9rem;
-    }
-
-    .tarjeta-descripcion h3 {
-        font-size: 0.9rem;
-    }
-
-    .tarjeta-carrera {
-        width: 100%;
-        height: 15%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .tarjeta-carrera h4 {
-        text-align: center;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #F0F3F4;
-    }
-
 
     /* tooll */
 
@@ -747,7 +624,6 @@
     }
 }
 
-
 @media screen and (max-width: 850px) {
 
     /* Home  */
@@ -767,74 +643,29 @@
 
     .contenedor-foto {
         margin-top: 2rem;
-        min-width: 50%;
+        min-width: 60%;
         height: 50vh;
-        transition: all 0s ease-in;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background: url(/img/foto-perfil.jpeg);
-        background-size: cover;
-        transition: all 1s ease-in;
     }
-
 
 
     /* About me */
 
     .about-me {
-
         padding: 6rem 4rem;
     }
 
-    .contenedor-sobremi {
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
-
-    }
-
-    .personal-informacion {
-        width: 100%;
-        height: auto;
-        margin-bottom: 4rem;
-    }
 
     .personal-informacion h2 {
         font-size: 1.2rem;
-        letter-spacing: -1px;
-        margin-bottom: 2rem;
+    }
+
+
+    .personal-hobbies h2 {
+        font-size: 1.2rem;
+
         text-align: center;
     }
 
-    .personal-informacion .lista {
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        color: #D0D3D4;
-        margin-bottom: 3rem;
-        gap: 1rem;
-    }
-
-
-    .personal-hobbies {
-        width: 100%;
-        height: auto;
-    }
-
-    .personal-hobbies h2 {
-        color: #ECF0F1;
-        font-size: 1.2rem;
-        letter-spacing: -1px;
-        margin-bottom: 2rem;
-    }
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        align-items: center;
-        justify-content: center;
-    }
 
     .grid-item {
         background-color: rgba(37, 47, 60, 0.8);
@@ -860,74 +691,37 @@
         font-size: 2.5rem;
     }
 
-
-    /* EDUCACION */
-
-    .education {
-        width: 100%;
-        height: auto;
-        background-color: #11171f;
-        padding: 4rem 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+    /* Services */
+    .services .container-cards{
+        width: 85%;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .services .container-cards .card-item.activo{
+        transform: translateY(0);
+    }
+    .services .container-cards .card-item.activoAbajo{
+        transform: translateY(0);
+    }
+    
+    .services-title {
+        font-size: 2.4rem;
     }
 
-    .tarjetas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0.8rem;
-        width: 100%;
-        height: auto;
-        margin-top: 1rem;
+    .services-title .title-azul {
+        font-size: 2.5rem;
+
     }
 
-    .tarjeta {
-        width: 65%;
-        height: 65vh;
-    }
-
-    .tarjeta-icon {
-        width: 100%;
-        height: 65%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    .tarjeta-icon .cecy {
-        height: 70%;
-    }
-
-    .tarjeta-icon img {
-        height: 75%;
-    }
-
-    .tarjeta-descripcion h2 {
+    .container-cards .card-item h2 {
         font-size: 0.9rem;
     }
 
-    .tarjeta-descripcion h3 {
-        font-size: 0.9rem;
+    .container-cards .card-item p {
+        padding: 0;
+        line-height: 1.1rem;
+        font-size: 0.7rem;
     }
-
-    .tarjeta-carrera {
-        width: 100%;
-        height: 15%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .tarjeta-carrera h4 {
-        text-align: center;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #F0F3F4;
-    }
-
 
     /* tooll */
 
@@ -935,9 +729,6 @@
         width: 100%;
         padding: 4rem;
     }
-
-
-
 
     .grid-container-tools {
         display: grid;
@@ -1031,7 +822,6 @@
     }
 }
 
-
 @media screen and (max-width: 720px) {
 
     /* Home  */
@@ -1051,14 +841,8 @@
 
     .contenedor-foto {
         margin-top: 2rem;
-        width: 60%;
+        width: 70%;
         height: 50vh;
-        transition: all 0s ease-in;
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background: url(/img/foto-perfil.jpeg);
-        background-size: cover;
-        transition: all 1s ease-in;
     }
 
 
@@ -1070,52 +854,18 @@
         padding: 6rem 4rem;
     }
 
-    .contenedor-sobremi {
-        width: 100%;
-        height: 100%;
-        flex-direction: column;
-        justify-content: center;
 
-    }
+
 
     .personal-informacion {
-        width: 100%;
-        height: auto;
-        margin-bottom: 4rem;
-    }
-
-    .personal-informacion h2 {
-        font-size: 1.2rem;
-        letter-spacing: -1px;
-        margin-bottom: 2rem;
-        text-align: center;
-    }
-
-    .personal-informacion .lista {
-        display: flex;
-        align-items: start;
-        justify-content: start;
-        color: #D0D3D4;
-        margin-bottom: 3rem;
-        gap: 1rem;
+        width: 90%;
     }
 
 
-    .personal-hobbies {
-        width: 100%;
-        height: auto;
-    }
-
-    .personal-hobbies h2 {
-        color: #ECF0F1;
-        font-size: 1.2rem;
-        letter-spacing: -1px;
-        margin-bottom: 2rem;
-    }
 
     .grid-container {
         display: grid;
-        grid-template-columns: auto auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
         align-items: center;
         justify-content: center;
     }
@@ -1360,10 +1110,9 @@
 
     .contenedor-home {
         margin-top: 4rem;
-
         width: 100%;
         height: 100%;
-        padding: 2rem;
+        padding: 3rem;
     }
 
     h1 {
@@ -1381,8 +1130,6 @@
 
     .contenedor-home-soy .nombre {
         font-size: 1.9rem;
-        font-family: 'Tourney', cursive;
-        color: #5499C7;
         font-weight: 700;
     }
 
@@ -1390,7 +1137,6 @@
         padding: 0 0.5rem;
         font-size: .7rem;
         font-weight: 700;
-        background-color: #5499C7;
         border-radius: 2px;
     }
 
@@ -1402,32 +1148,12 @@
         text-align: justify;
     }
 
-    .contenedor-home-btnsobremi {
-        text-decoration: none;
-        background-color: #4089b9;
-        padding: 0.3rem 1.1rem;
-        border-radius: 20px;
-        font-size: 0.7rem;
-        font-weight: 600;
-        color: #F0F3F4;
-        box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
-        transition: all 0.3s ease-in;
-    }
-
-    .contenedor-home-btnsobremi:hover {
-        background-color: #3980af;
-        font-size: 0.7rem;
-    }
-
-
 
     .contenedor-foto {
-        width: 85%;
+        width: 0%;
         height: 0%;
-        transition: all 0s ease-in;
+        opacity: 0;
     }
-
-
 
 
     /* About me */
@@ -1440,22 +1166,16 @@
         width: 100%;
         height: 100%;
         flex-direction: column;
-        justify-content: center;
 
     }
 
     .sobremi {
         font-size: 1.7rem;
-        color: #F0F3F4;
-        text-align: center;
-        margin-bottom: 2rem;
     }
 
     .sobremi .mi {
         font-size: 1.8rem;
-        font-family: 'Tourney', cursive;
-        color: #5499C7;
-        font-weight: 700;
+
     }
 
 
@@ -1465,6 +1185,7 @@
         margin-bottom: 3rem;
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: center;
 
     }
@@ -1477,14 +1198,6 @@
         text-align: center;
     }
 
-    .personal-informacion .lista {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        color: #D0D3D4;
-        margin-bottom: 3rem;
-        gap: 1rem;
-    }
 
     .personal-informacion .lista ul {
         width: 100%;
@@ -1503,21 +1216,9 @@
         color: #979A9A;
     }
 
-    .personal-informacion .lista ul li .respuesta {
-        margin-left: 0.2rem;
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: #D0D3D4;
-    }
-
-    .personal-informacion .lista ul li .respuesta-email {
-        margin-left: 0.2rem;
-        font-size: 0.9rem;
-        font-weight: 600;
-        color: #D0D3D4;
-    }
 
     .btnCV {
+        width: 40%;
         padding: .5rem 1rem;
         border-radius: 20px;
         border: 3px solid #32a2ec;
@@ -1552,93 +1253,31 @@
         justify-content: center;
     }
 
+    /* Services */
 
-    /* EDUCACION */
+    .services{
+        padding: 4rem 0.5rem 6rem 0.5rem;
+ 
+    }
+    .services-title{
+        font-size: 2rem;
+    }
+    .services-title .title-azul{
+        font-size: 2.1rem;
+    }
+    
+    .services .container-cards{
+        z-index: 0;
+        width: 85%;
+        grid-template-columns: repeat(1, 1fr);
 
-    .education {
-        width: 100%;
-        height: auto;
-        background-color: #11171f;
-        padding: 4rem 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
     }
 
-    .education-title {
-        font-size: 1.7rem;
-        color: #F0F3F4;
-        margin-bottom: 1.3rem;
+    .container-cards .card-item h2{
+        font-size: 1rem;
     }
-
-    .education-title .title-azul {
-        font-size: 1.7rem;
-        font-family: 'Tourney', cursive;
-        color: #5499C7;
-        font-weight: 700;
-    }
-
-    .tarjetas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0.8rem;
-        width: 100%;
-        height: auto;
-        margin-top: 1rem;
-    }
-
-    .tarjeta {
-        width: 90%;
-        height: 65vh;
-    }
-
-    .tarjeta-icon {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .tarjeta-icon .cecy {
-        height: 70%;
-    }
-
-    .tarjeta-icon img {
-        height: 75%;
-    }
-
-    .tarjeta-descripcion {
-        width: 100%;
-        height: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    .tarjeta-descripcion h2 {
+    .container-cards .card-item p{
         font-size: 0.9rem;
-    }
-
-    .tarjeta-descripcion h3 {
-        font-size: 0.9rem;
-    }
-
-    .tarjeta-carrera {
-        width: 100%;
-        height: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .tarjeta-carrera h4 {
-        text-align: center;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #F0F3F4;
     }
 
 
@@ -1733,6 +1372,7 @@
         padding: 0 0.5rem;
 
     }
+
     .tarjeta-git .link {
         text-align: center;
         margin-top: 1.3rem;
@@ -2109,95 +1749,22 @@
         justify-content: center;
     }
 
+    /* Services */
 
-    /* EDUCACION */
-
-    .education {
-        width: 100%;
-        height: auto;
-        background-color: #11171f;
-        padding: 4rem 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+    .services{
+        padding: 3.5rem 0;
+ 
     }
-
-    .education-title {
+    .services-title{
         font-size: 1.7rem;
-        color: #F0F3F4;
-        margin-bottom: 1.3rem;
     }
-
-    .education-title .title-azul {
-        font-size: 1.7rem;
-        font-family: 'Tourney', cursive;
-        color: #5499C7;
-        font-weight: 700;
+    .services-title .title-azul{
+        font-size: 1.8rem;
     }
-
-    .tarjetas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0.8rem;
-        width: 100%;
-        height: auto;
-        margin-top: 1rem;
+    
+    .services .container-cards{
+        width: 95%;
     }
-
-    .tarjeta {
-        width: 90%;
-        height: 65vh;
-    }
-
-    .tarjeta-icon {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .tarjeta-icon .cecy {
-        height: 70%;
-    }
-
-    .tarjeta-icon img {
-        height: 75%;
-    }
-
-    .tarjeta-descripcion {
-        width: 100%;
-        height: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    .tarjeta-descripcion h2 {
-        font-size: 0.9rem;
-    }
-
-    .tarjeta-descripcion h3 {
-        font-size: 0.9rem;
-    }
-
-    .tarjeta-carrera {
-        width: 100%;
-        height: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .tarjeta-carrera h4 {
-        text-align: center;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #F0F3F4;
-    }
-
 
 
     /* tooll */
@@ -2289,6 +1856,7 @@
         padding: 0 0.5rem;
 
     }
+
     .tarjeta-git .link {
         text-align: center;
         margin-top: 1.3rem;
@@ -2665,97 +2233,32 @@
         align-items: center;
         justify-content: center;
     }
+    /* Services */
 
-
-    /* EDUCACION */
-
-    .education {
-        width: 100%;
-        height: auto;
-        background-color: #11171f;
-        padding: 4rem 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
+    .services{
+        padding: 4rem 0;
+ 
     }
-
-    .education-title {
+    .services-title{
+        font-size: 1.6rem;
+    }
+    .services-title .title-azul{
         font-size: 1.7rem;
-        color: #F0F3F4;
-        margin-bottom: 1.3rem;
     }
-
-    .education-title .title-azul {
-        font-size: 1.7rem;
-        font-family: 'Tourney', cursive;
-        color: #5499C7;
-        font-weight: 700;
-    }
-
-    .tarjetas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0.8rem;
+    
+    .services .container-cards{
+        z-index: 0;
         width: 100%;
-        height: auto;
-        margin-top: 1rem;
+        grid-template-columns: repeat(1, 1fr);
+
     }
 
-    .tarjeta {
-        width: 90%;
-        height: 65vh;
-    }
-
-    .tarjeta-icon {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .tarjeta-icon .cecy {
-        height: 70%;
-    }
-
-    .tarjeta-icon img {
-        height: 75%;
-    }
-
-    .tarjeta-descripcion {
-        width: 100%;
-        height: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    .tarjeta-descripcion h2 {
+    .container-cards .card-item h2{
         font-size: 0.9rem;
     }
-
-    .tarjeta-descripcion h3 {
-        font-size: 0.9rem;
+    .container-cards .card-item p{
+        font-size: 0.7rem;
     }
-
-    .tarjeta-carrera {
-        width: 100%;
-        height: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .tarjeta-carrera h4 {
-        text-align: center;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #F0F3F4;
-    }
-
-
 
     /* tooll */
 
@@ -2817,7 +2320,7 @@
     }
 
     /* EXP */
-    .experience{
+    .experience {
         width: 100%;
         padding: 1rem 1rem 5rem 1rem;
         background-color: #FDFEFE;
@@ -2854,6 +2357,7 @@
         padding: 0 0.5rem;
 
     }
+
     .tarjeta-git .link {
         text-align: center;
         margin-top: 1.3rem;
@@ -2974,8 +2478,6 @@
     }
 }
 
-
-
 @media screen and (max-width: 375px) {
 
     /* Navegacion */
@@ -3030,10 +2532,6 @@
     .navegacion-link a:hover {
         color: #5499C7;
     }
-
-
-
-
 
     /* Home  */
     .home {
@@ -3236,95 +2734,6 @@
     }
 
 
-    /* EDUCACION */
-
-    .education {
-        width: 100%;
-        height: auto;
-        background-color: #11171f;
-        padding: 4rem 2rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    .education-title {
-        font-size: 1.7rem;
-        color: #F0F3F4;
-        margin-bottom: 1.3rem;
-    }
-
-    .education-title .title-azul {
-        font-size: 1.7rem;
-        font-family: 'Tourney', cursive;
-        color: #5499C7;
-        font-weight: 700;
-    }
-
-    .tarjetas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0.8rem;
-        width: 100%;
-        height: auto;
-        margin-top: 1rem;
-    }
-
-    .tarjeta {
-        width: 90%;
-        height: 65vh;
-    }
-
-    .tarjeta-icon {
-        width: 100%;
-        height: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .tarjeta-icon .cecy {
-        height: 70%;
-    }
-
-    .tarjeta-icon img {
-        height: 75%;
-    }
-
-    .tarjeta-descripcion {
-        width: 100%;
-        height: 30%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    .tarjeta-descripcion h2 {
-        font-size: 0.9rem;
-    }
-
-    .tarjeta-descripcion h3 {
-        font-size: 0.9rem;
-    }
-
-    .tarjeta-carrera {
-        width: 100%;
-        height: 20%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .tarjeta-carrera h4 {
-        text-align: center;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #F0F3F4;
-    }
-
-
 
     /* tooll */
 
@@ -3387,7 +2796,7 @@
 
 
     /* EXP */
-    .experience{
+    .experience {
         width: 100%;
         padding: 0.5rem 0.5rem 5rem 0.5rem;
         background-color: #FDFEFE;
@@ -3424,6 +2833,7 @@
         padding: 0 0.5rem;
 
     }
+
     .tarjeta-git .link {
         text-align: center;
         margin-top: 1.3rem;

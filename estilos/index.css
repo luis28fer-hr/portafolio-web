@@ -14,9 +14,6 @@ body{
     position: relative;
     background-color: #F7F9F9;
 }
-#ultimo + div{
-    visibility: hidden;
-}
 .navegacion{
     position: fixed;
     right: 0;
@@ -25,7 +22,7 @@ body{
     align-items: center;
     justify-content: end;
     margin-right: 2.5rem;
-    z-index: 1;
+    z-index: 0;
 }
 
 .navegacion-links{
@@ -138,6 +135,7 @@ h1{
     background-repeat:no-repeat;
     background:url(/img/foto-perfil.jpeg);
     background-size: cover;
+    background-position: center;
     transition: all 1s ease-in;
 }
 
