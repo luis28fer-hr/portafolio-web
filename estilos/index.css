@@ -22,7 +22,7 @@ body{
     align-items: center;
     justify-content: end;
     margin-right: 2.5rem;
-    z-index: 0;
+    z-index: 100;
 }
 
 .navegacion-links{
