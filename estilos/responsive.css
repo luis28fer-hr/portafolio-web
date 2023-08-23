@@ -1,122 +1,3 @@
-@media sreen and (max-width: 1440px) {
-
-    /* Home  */
-
-    /* About me */
-
-    /* EDUCACION */
-    .education {
-        width: 100%;
-        height: 90vh;
-    }
-
-    .tarjeta {
-        width: 30%;
-        height: 80%;
-    }
-
-    .tarjeta-icon {
-        height: 60%;
-    }
-
-    .tarjeta-icon .cecy {
-        height: 75%;
-    }
-
-    .tarjeta-icon img {
-        height: 80%;
-    }
-
-    .tarjeta-descripcion {
-        height: 25%;
-    }
-
-    .tarjeta-descripcion h2 {
-        font-size: 1rem;
-    }
-
-    .tarjeta-descripcion h3 {
-        font-size: 1rem;
-    }
-
-    .tarjeta-carrera h4 {
-        font-size: 1.1rem;
-    }
-
-
-    /* Tools */
-
-    .grid-container-tools {
-        grid-template-columns: auto auto auto auto;
-    }
-
-    .grid-item-tool {
-        width: 28vh;
-        height: 28vh;
-    }
-
-    /* Experiencie */
-
-
-    /* Contact */
-
-    .grid-item-contact {
-        width: 40vh;
-    }
-
-}
-
-@media screen and (max-width: 1366px) {
-
-    /* Home  */
-
-    /* About me */
-
-    /* EDUCACION */
-    .education {
-        width: 100%;
-        height: 100vh;
-    }
-
-    .tarjeta {
-        width: 30%;
-        height: 85%;
-    }
-
-    .tools {
-        width: 100%;
-        padding: 5rem;
-    }
-
-
-    .grid-container-tools {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
-        align-items: center;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .grid-item-tool {
-        width: 25vh;
-        height: 25vh;
-    }
-
-    .grid-item-tool i {
-        font-size: 3rem;
-    }
-
-    .grid-item-tool span {
-        font-size: 1rem;
-        padding: 0;
-    }
-
-    .tarjeta-git {
-        width: 40%;
-    }
-
-}
-
 @media screen and (max-width: 1270px) {
 
     /* Services */
@@ -308,16 +189,18 @@
     }
 
     /* Servives */
-    .services .container-cards{
+    .services .container-cards {
         grid-template-columns: repeat(3, 1fr);
     }
-    .services .container-cards .card-item.activo{
+
+    .services .container-cards .card-item.activo {
         transform: translateY(0);
     }
-    .services .container-cards .card-item.activoAbajo{
+
+    .services .container-cards .card-item.activoAbajo {
         transform: translateY(0);
     }
-    
+
 
 
     /* tooll */
@@ -368,18 +251,9 @@
         color: #2E86C1;
     }
 
-    /* Experiemce */
-    .experience {
-        width: 100%;
-        height: 100vh;
-        padding: 2.5rem 2rem;
-        background-color: #FDFEFE;
-    }
-
 
     .experience h1 {
         text-align: end;
-        margin-right: 4rem;
         font-size: 2.7rem;
         font-weight: 800;
         color: #0b1014;
@@ -394,8 +268,10 @@
         font-weight: 800;
     }
 
-    .tarjeta-git {
-        width: 45%;
+    .item-descripcion p {
+        font-size: 0.85rem;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
     }
 
 
@@ -572,14 +448,11 @@
     /* Experiemce */
     .experience {
         width: 100%;
-        height: 100vh;
-        padding: 2.5rem 2rem;
-        background-color: #FDFEFE;
+        padding: 4rem 6rem 6rem 6rem;
     }
 
     .experience h1 {
         text-align: end;
-        margin-right: 4rem;
         font-size: 1.7rem;
         font-weight: 800;
         color: #0b1014;
@@ -594,10 +467,29 @@
         font-weight: 800;
     }
 
-    .tarjeta-git {
-        width: 50%;
+    .grid-container-experience {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
     }
 
+    .grid-item-experience {
+        width: 85%;
+        height: 30rem;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        overflow: hidden;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .item-descripcion p {
+        font-size: 1rem;
+    }
 
     /* Contact */
 
@@ -692,18 +584,20 @@
     }
 
     /* Services */
-    .services .container-cards{
+    .services .container-cards {
         width: 85%;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
     }
-    .services .container-cards .card-item.activo{
+
+    .services .container-cards .card-item.activo {
         transform: translateY(0);
     }
-    .services .container-cards .card-item.activoAbajo{
+
+    .services .container-cards .card-item.activoAbajo {
         transform: translateY(0);
     }
-    
+
     .services-title {
         font-size: 2.4rem;
     }
@@ -772,29 +666,27 @@
 
     /* Experiemce */
     .experience {
-        width: 100%;
-        height: 100vh;
-        padding: 2.5rem 2rem;
-        background-color: #FDFEFE;
+        padding: 4rem 6.5rem 6.5rem 6rem;
     }
 
     .experience h1 {
-        text-align: end;
-        margin-right: 4rem;
-        font-size: 1.7rem;
-        font-weight: 800;
-        color: #0b1014;
-        margin-bottom: 1.5rem;
-        letter-spacing: 1px;
+        font-size: 2.4rem;
     }
 
     .experience h1 span {
-        font-size: 1.8rem;
-        font-family: 'Tourney', cursive;
-        color: #5499C7;
-        font-weight: 800;
+        font-size: 2.5rem;
+
     }
 
+    .grid-item-experience {
+        width: 100%;
+        height: 33rem;
+        ;
+    }
+
+    .item-descripcion p {
+        font-size: 1rem;
+    }
 
 
     /* Contact */
@@ -871,73 +763,6 @@
     }
 
 
-    /* EDUCACION */
-
-    .education {
-        width: 100%;
-        height: auto;
-        background-color: #11171f;
-        padding: 4rem 5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    .tarjetas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 0.8rem;
-        width: 100%;
-        height: auto;
-        margin-top: 1rem;
-    }
-
-    .tarjeta {
-        width: 65%;
-        height: 65vh;
-    }
-
-    .tarjeta-icon {
-        width: 100%;
-        height: 65%;
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-
-    .tarjeta-icon .cecy {
-        height: 70%;
-    }
-
-    .tarjeta-icon img {
-        height: 75%;
-    }
-
-    .tarjeta-descripcion h2 {
-        font-size: 0.9rem;
-    }
-
-    .tarjeta-descripcion h3 {
-        font-size: 0.9rem;
-    }
-
-    .tarjeta-carrera {
-        width: 100%;
-        height: 15%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .tarjeta-carrera h4 {
-        text-align: center;
-        font-size: 0.9rem;
-        font-weight: 700;
-        letter-spacing: 1px;
-        color: #F0F3F4;
-    }
-
 
     /* tooll */
 
@@ -991,31 +816,45 @@
 
     /* Experiemce */
     .experience {
-        width: 100%;
-        height: 100vh;
-        padding: 2.5rem 2rem;
-        background-color: #FDFEFE;
+        padding: 4rem 6.5rem 6.5rem 6rem;
     }
 
     .experience h1 {
-        text-align: end;
-        margin-right: 4rem;
-        font-size: 1.7rem;
-        font-weight: 800;
-        color: #0b1014;
-        margin-bottom: 1.5rem;
-        letter-spacing: 1px;
+        font-size: 2.2rem;
     }
 
     .experience h1 span {
-        font-size: 1.8rem;
-        font-family: 'Tourney', cursive;
-        color: #5499C7;
-        font-weight: 800;
+        font-size: 2.3rem;
+
     }
 
-    .tarjeta-git {
-        width: 60%;
+    .grid-item-experience {
+        width: 100%;
+        height: 25rem;
+    }
+
+    .item-img {
+        height: 55%;
+    }
+    .item-descripcion {
+        height: 45%;
+    }
+    .item-descripcion h3 {
+        font-size: 1rem;
+    }
+
+    .item-descripcion p {
+        font-size: 1rem;
+    }
+
+    .item-opciones a {
+        font-size: 0.9rem;
+        gap: 0.4rem;
+        padding: 0.4rem 1rem;
+    }
+
+    .size i {
+        font-size: 0.9rem;
     }
 
     /* Contact */
@@ -1255,28 +1094,31 @@
 
     /* Services */
 
-    .services{
+    .services {
         padding: 4rem 0.5rem 6rem 0.5rem;
- 
+
     }
-    .services-title{
+
+    .services-title {
         font-size: 2rem;
     }
-    .services-title .title-azul{
+
+    .services-title .title-azul {
         font-size: 2.1rem;
     }
-    
-    .services .container-cards{
+
+    .services .container-cards {
         z-index: 0;
         width: 85%;
         grid-template-columns: repeat(1, 1fr);
 
     }
 
-    .container-cards .card-item h2{
+    .container-cards .card-item h2 {
         font-size: 1rem;
     }
-    .container-cards .card-item p{
+
+    .container-cards .card-item p {
         font-size: 0.9rem;
     }
 
@@ -1341,51 +1183,60 @@
         color: #2E86C1;
     }
 
-    /* EXP */
-
-
-    .experience p {
-        text-align: center;
-        font-size: 1.1rem;
-        font-weight: 600;
-        margin-bottom: 1.5rem;
+    /* Experiemce */
+    .experience {
+        padding: 4rem 3rem 6rem 3rem;
     }
 
-    .tarjeta-git {
-        background-color: #F0F3F4;
-        margin: 0 auto;
-        width: 60%;
-        border-radius: 16px;
-        padding: 1.5rem 1rem;
-        box-shadow: 0 0 5px 2px rgba(41, 47, 53, 0.2);
-        transition: all 0.4s ease-in;
+    .experience h1 {
+        font-size: 2rem;
     }
 
+    .experience h1 span {
+        font-size: 2.1rem;
 
+    }
 
-    .tarjeta-git .descripcion {
-        color: #212F3D;
+    .grid-item-experience {
+        height: 20rem;
+    }
+
+    .item-img {
+        height: 55%;
+    }
+    .item-descripcion {
+        height: 45%;
+        gap: 0.2rem;
+
+    }
+    .item-descripcion h3 {
         font-size: 1rem;
-        text-align: center;
-        line-height: 1.6rem;
-        transition: all 0.3s ease-in;
-        padding: 0 0.5rem;
-
     }
 
-    .tarjeta-git .link {
-        text-align: center;
-        margin-top: 1.3rem;
-        margin-bottom: 1.2rem;
+    .item-descripcion p {
+        font-size: 0.9rem;
     }
 
-    .tarjeta-git .link a {
-        font-size: 1.1rem;
-        text-decoration: none;
-        color: blue;
-        font-weight: 500;
-        transition: all 0.3s ease-in;
+    .item-tecnologias {
+        gap: 0.6rem;
+        margin-top: 0.5rem;
     }
+    .item-tecnologias i {
+        font-size: 1rem;
+    }
+    .item-opciones {
+        margin-top: 0.1rem;
+        padding: 0.1rem 0;
+    }
+    .item-opciones a {
+        font-size: 0.8rem;
+        gap: 0.4rem;
+        padding: 0.3rem 0.7rem;
+    }
+    .size i {
+        font-size: 0.8rem;
+    }
+
 
     /* Contact */
 
@@ -1751,18 +1602,20 @@
 
     /* Services */
 
-    .services{
+    .services {
         padding: 3.5rem 0;
- 
+
     }
-    .services-title{
+
+    .services-title {
         font-size: 1.7rem;
     }
-    .services-title .title-azul{
+
+    .services-title .title-azul {
         font-size: 1.8rem;
     }
-    
-    .services .container-cards{
+
+    .services .container-cards {
         width: 95%;
     }
 
@@ -1826,51 +1679,63 @@
         color: #2E86C1;
     }
 
-    /* EXP */
-
-    .experience p {
-        text-align: center;
-        font-size: 1.1rem;
-        font-weight: 600;
-        margin-bottom: 1.5rem;
+    /* Experiemce */
+    .experience {
+        padding: 4rem 3rem 6rem 3rem;
     }
 
-    .tarjeta-git {
-        background-color: #F0F3F4;
-        margin: 0 auto;
-        width: 60%;
-        border-radius: 16px;
-        padding: 1.5rem 1rem;
-        box-shadow: 0 0 5px 2px rgba(41, 47, 53, 0.2);
-        transition: all 0.4s ease-in;
+    .experience h1 {
+        font-size: 1.7rem;
     }
 
+    .experience h1 span {
+        font-size: 1.8rem;
 
+    }
 
-    .tarjeta-git .descripcion {
-        color: #212F3D;
+    .grid-item-experience {
+        height: 20rem;
+    }
+
+    .item-img {
+        height: 55%;
+    }
+    .item-descripcion {
+        height: 45%;
+        gap: 0.2rem;
+
+    }
+    .item-descripcion h3 {
+        font-size: 0.9rem;
+    }
+
+    .item-descripcion p {
+        font-size: 0.9rem;
+    }
+
+    .item-tecnologias {
+        gap: 0.6rem;
+        margin-top: 0.5rem;
+    }
+    .item-tecnologias i {
         font-size: 1rem;
-        text-align: center;
-        line-height: 1.6rem;
-        transition: all 0.3s ease-in;
-        padding: 0 0.5rem;
-
+    }
+    .item-opciones {
+        margin-top: 0.1rem;
+        padding: 0.1rem 0;
+    }
+    .item-opciones a {
+        font-size: 0.8rem;
+        gap: 0.4rem;
+        padding: 0.3rem 0.7rem;
+    }
+    .size i {
+        font-size: 0.8rem;
     }
 
-    .tarjeta-git .link {
-        text-align: center;
-        margin-top: 1.3rem;
-        margin-bottom: 1.2rem;
+    .item-opciones .opc-git {
+        padding: 0.3rem;
     }
-
-    .tarjeta-git .link a {
-        font-size: 1.1rem;
-        text-decoration: none;
-        color: blue;
-        font-weight: 500;
-        transition: all 0.3s ease-in;
-    }
-
 
     /* Contact */
 
@@ -2233,30 +2098,34 @@
         align-items: center;
         justify-content: center;
     }
+
     /* Services */
 
-    .services{
+    .services {
         padding: 4rem 0;
- 
+
     }
-    .services-title{
+
+    .services-title {
         font-size: 1.6rem;
     }
-    .services-title .title-azul{
+
+    .services-title .title-azul {
         font-size: 1.7rem;
     }
-    
-    .services .container-cards{
+
+    .services .container-cards {
         z-index: 0;
         width: 100%;
         grid-template-columns: repeat(1, 1fr);
 
     }
 
-    .container-cards .card-item h2{
+    .container-cards .card-item h2 {
         font-size: 0.9rem;
     }
-    .container-cards .card-item p{
+
+    .container-cards .card-item p {
         font-size: 0.7rem;
     }
 
@@ -2318,61 +2187,6 @@
         font-size: 0.4rem;
         color: #2E86C1;
     }
-
-    /* EXP */
-    .experience {
-        width: 100%;
-        padding: 1rem 1rem 5rem 1rem;
-        background-color: #FDFEFE;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .experience p {
-        text-align: center;
-        font-size: 1.1rem;
-        font-weight: 600;
-        margin-bottom: 1.5rem;
-    }
-
-    .tarjeta-git {
-        background-color: #F0F3F4;
-        margin: 0 auto;
-        width: 70%;
-        border-radius: 16px;
-        padding: 1.5rem 1rem;
-        box-shadow: 0 0 5px 2px rgba(41, 47, 53, 0.2);
-        transition: all 0.4s ease-in;
-    }
-
-
-
-    .tarjeta-git .descripcion {
-        color: #212F3D;
-        font-size: 1rem;
-        text-align: center;
-        line-height: 1.6rem;
-        transition: all 0.3s ease-in;
-        padding: 0 0.5rem;
-
-    }
-
-    .tarjeta-git .link {
-        text-align: center;
-        margin-top: 1.3rem;
-        margin-bottom: 1.2rem;
-    }
-
-    .tarjeta-git .link a {
-        font-size: 1.1rem;
-        text-decoration: none;
-        color: blue;
-        font-weight: 500;
-        transition: all 0.3s ease-in;
-    }
-
-
 
 
     /* Contact */
@@ -2794,58 +2608,62 @@
         color: #2E86C1;
     }
 
-
-    /* EXP */
+    /* Experiemce */
     .experience {
-        width: 100%;
-        padding: 0.5rem 0.5rem 5rem 0.5rem;
-        background-color: #FDFEFE;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        padding: 3rem 2rem 4rem 2rem;
     }
 
-    .experience p {
-        text-align: center;
-        font-size: 1rem;
-        font-weight: 600;
-        margin-bottom: 1.5rem;
+    .experience h1 {
+        font-size: 1.6rem;
     }
 
-    .tarjeta-git {
-        background-color: #F0F3F4;
-        margin: 0 auto;
-        width: 80%;
-        border-radius: 16px;
-        padding: 1.3rem 1rem;
-        box-shadow: 0 0 5px 2px rgba(41, 47, 53, 0.2);
-        transition: all 0.4s ease-in;
-    }
-
-
-
-    .tarjeta-git .descripcion {
-        color: #212F3D;
-        font-size: 0.9rem;
-        text-align: center;
-        line-height: 1.6rem;
-        transition: all 0.3s ease-in;
-        padding: 0 0.5rem;
+    .experience h1 span {
+        font-size: 1.7rem;
 
     }
 
-    .tarjeta-git .link {
-        text-align: center;
-        margin-top: 1.3rem;
-        margin-bottom: 1.2rem;
+    .grid-item-experience {
+        height: 18rem;
     }
 
-    .tarjeta-git .link a {
-        font-size: 1rem;
-        text-decoration: none;
-        color: blue;
-        font-weight: 500;
-        transition: all 0.3s ease-in;
+    .item-img {
+        height: 53%;
+    }
+    .item-descripcion {
+        height: 47%;
+        gap: 0.2rem;
+
+    }
+    .item-descripcion h3 {
+        font-size: 0.8rem;
+    }
+
+    .item-descripcion p {
+        font-size: 0.8rem;
+    }
+
+    .item-tecnologias {
+        gap: 0.4rem;
+        margin-top: 0.2rem;
+    }
+    .item-tecnologias i {
+        font-size: 0.8rem;
+    }
+    .item-opciones {
+        margin-top: 0.1rem;
+        padding: 0.1rem 0;
+    }
+    .item-opciones a {
+        font-size: 0.7rem;
+        gap: 0.2rem;
+        padding: 0.4rem 0.5rem;
+    }
+    .size i {
+        font-size: 0.7rem;
+    }
+
+    .item-opciones .opc-git {
+        padding: 0.3rem;
     }
 
 
