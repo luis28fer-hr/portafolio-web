@@ -107,3 +107,39 @@ gridMacuin.addEventListener('mouseleave', () => {
 });
 
 showImageMacuin(currentIndexMacuin);
+
+
+// tercer carrusel
+const gridAuti = document.getElementById('grid-experience-auti');
+const itemImgAuti = document.getElementById('carrusel-auti');
+const imagesAuti = itemImgAuti.querySelectorAll('img');
+
+let currentIndexAuti = 0;
+let intervalIdAuti = null;
+
+function showImageAuti(index) {
+  imagesAuti.forEach((img, i) => {
+    if (i === index) {
+      img.classList.add('active');
+    } else {
+      img.classList.remove('active');
+    }
+  });
+}
+
+function nextImageAuti() {
+  currentIndexAuti = (currentIndexAuti + 1) % imagesAuti.length;
+  showImageAuti(currentIndexAuti);
+}
+
+gridAuti.addEventListener('mouseenter', () => {
+  intervalIdAuti = setInterval(nextImageAuti, 4000);
+});
+
+gridAuti.addEventListener('mouseleave', () => {
+  clearInterval(intervalIdAuti);
+  currentIndexAuti = 0; // Regresar al primer índice cuando el cursor sale
+  showImageAuti(currentIndexAuti); // Mostrar la primera imagen
+});
+
+showImageAuti(currentIndexAuti);
