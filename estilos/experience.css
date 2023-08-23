@@ -131,6 +131,7 @@
 }
 
 .item-tecnologias i {
+    cursor:pointer;
     font-size: 1.3rem;
     color: #34495E;
     transition: all 0.3s ease;
@@ -185,4 +186,8 @@
 }
 .size i{
     color: #34495E;
+    cursor: pointer;
+}
+.size i:hover{
+    color: #D35400;
 }
