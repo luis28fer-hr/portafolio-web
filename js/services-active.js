@@ -143,3 +143,40 @@ gridAuti.addEventListener('mouseleave', () => {
 });
 
 showImageAuti(currentIndexAuti);
+
+
+
+// cuarto carrusel
+const gridTodo = document.getElementById('grid-experience-todo');
+const itemImgTodo = document.getElementById('carrusel-todo');
+const imagesTodo = itemImgTodo.querySelectorAll('img');
+
+let currentIndexTodo = 0;
+let intervalIdTodo = null;
+
+function showImageTodo(index) {
+  imagesTodo.forEach((img, i) => {
+    if (i === index) {
+      img.classList.add('active');
+    } else {
+      img.classList.remove('active');
+    }
+  });
+}
+
+function nextImageTodo() {
+  currentIndexTodo = (currentIndexTodo + 1) % imagesTodo.length;
+  showImageTodo(currentIndexTodo);
+}
+
+gridTodo.addEventListener('mouseenter', () => {
+  intervalIdTodo = setInterval(nextImageTodo, 4000);
+});
+
+gridTodo.addEventListener('mouseleave', () => {
+  clearInterval(intervalIdTodo);
+  currentIndexTodo = 0; // Regresar al primer índice cuando el cursor sale
+  showImageTodo(currentIndexTodo); // Mostrar la primera imagen
+});
+
+showImageTodo(currentIndexTodo);
