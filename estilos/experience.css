@@ -1,21 +1,22 @@
-.experience{
+.experience {
+    position: relative;
     width: 100%;
-    padding: 5rem 4rem 10rem 4rem;
+    padding: 4rem 7rem 7rem 7rem;
     background-color: #FDFEFE;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.experience h1{
+.experience h1 {
     text-align: end;
-    margin-right: 8rem;
     font-size: 3rem;
     font-weight: 800;
     color: #0b1014;
     margin-bottom: 1.5rem;
     letter-spacing: 1px;
 }
+
 .experience h1 span {
     font-size: 3.1rem;
     font-family: 'Tourney', cursive;
@@ -23,71 +24,165 @@
     font-weight: 800;
 }
 
-.experience p{
-    text-align: center;
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 1.5rem;
+.grid-container-experience {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
 }
 
-.tarjeta-git{
-    background-color: #F0F3F4;
-    margin: 0 auto;
-    width: 30%;
-    border-radius: 16px;
-    padding: 1.5rem 1rem;
-    box-shadow: 0 0 5px 2px rgba(41, 47, 53, 0.2);
-    transition: all 0.4s ease-in;
-}
-.tarjeta-git:hover{
-    transform: scale(1.05);
-}
-.tarjeta-git .icon{
-    text-align: center;
-    font-size: 8rem;
-    color: #808B96;
+.grid-item-experience {
+    position: relative;
+    width: 100%;
+    height: 30rem;
+    background-color: #F2F3F4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
 }
 
-.tarjeta-git .icon i{
+.grid-item-experience:hover {
+    transform: translateY(-4px);
+    background-color: #EAEDED;
+    box-shadow: 0 2px 3px 2px rgba(179, 182, 183, 0.5);
+
+}
+
+.item-img {
+    position: relative;
+    width: 100%;
+    height: 65%;
+    overflow: hidden;
+}
+
+.item-img .filtro {
+    position: absolute;
+    background-color: rgba(15, 22, 29, 0.3);
+    width: 100%;
+    height: 100%;
     transition: all 0.3s ease-in;
 }
 
-.tarjeta-git .icon i:hover{
-    color: #2C3E50;
-    transform: scale(1.1);
-}
-
-.tarjeta-git .descripcion{
-    color: #212F3D;
-    font-size: 1.1rem;
-    text-align: center;
-    line-height: 1.6rem;
-    transition: all 0.3s ease-in;
-    padding: 0 0.5rem;
+.grid-item-experience:hover .item-img .filtro {
+    background-color: rgba(15, 22, 29, 0);
 
 }
 
-.tarjeta-git .descripcion:hover{
-    color: #2182c4;
+.item-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.item-img img.active {
+    opacity: 1;
+  }
+
+.grid-item-experience:hover .item-img img{
+    transform: scale(1.02);
+    object-position: center;
+
 }
 
-.tarjeta-git .link{
-    text-align: center;
-    margin-top: 1.5rem;
-    margin-bottom: 1.3rem;
+
+.item-descripcion {
+    width: 100%;
+    height: 35%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 0.3rem;
 }
 
-.tarjeta-git .link a{
+.item-descripcion h3 {
     font-size: 1.2rem;
-    text-decoration:none;
-    color: blue;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: rgb(15, 22, 29);
+    transition: all 0.3s ease-in
+}
+
+.item-descripcion h3:hover {
+    color: #5499C7;
+    letter-spacing: 0.2px;
+}
+
+.item-descripcion p {
+    font-size: 1rem;
     font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.item-tecnologias {
+    width: 100%;
+    display: flex;
+    gap: 0.6rem;
+    margin-top: 1rem;
+}
+
+.item-tecnologias i {
+    font-size: 1.3rem;
+    color: #34495E;
+    transition: all 0.3s ease;
+}
+
+.item-tecnologias i:hover {
+    color: #1891e2;
+    transform: scale(1.1);
+
+}
+
+.item-opciones {
+    margin-top: 0.3rem;
+    width: 100%;
+    padding: 0.2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-opciones a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    border-radius: 10px;
+    color: #EAEDED;
+    text-decoration: none;
+    font-weight: 400;
+    background-color: #17212b;
+    padding: 0.5rem 1.3rem;
     transition: all 0.3s ease-in;
 }
 
-.tarjeta-git .link a:hover{
-    text-decoration: underline;
-    font-size: 1.2rem;
-    color: #2C3E50;
-    font-weight: 600;
+.item-opciones a:hover {
+    background-color: #5499C7;
+    transform: scale(1.02);
+}
+
+
+.item-opciones .opc-git {
+    border-radius: 10px;
+    color: #EAEDED;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+.size{
+    position: absolute;
+    right: 1rem;
+}
+.size i{
+    color: #34495E;
 }

@@ -69,10 +69,10 @@
     background-color: #212F3D;
 }
 .grid-item-tool:hover i {
-    font-size: 5rem;
+    font-size: 4rem;
     color: #2E86C1;
 }
 .grid-item-tool:hover span {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     color: #2E86C1;
 }

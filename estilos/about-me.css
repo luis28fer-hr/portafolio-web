@@ -129,7 +129,7 @@
   .grid-item:hover{
     transform: scale(1.15);
     background-color: rgb(41, 53, 66); 
-    color: #21618C;
+    color: #1584ce;
     font-size: 2.5rem; 
 }
 
